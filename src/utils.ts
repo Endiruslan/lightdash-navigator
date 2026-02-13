@@ -59,7 +59,7 @@ export async function lightdashApiRequest<T>(endpoint: string, signal?: AbortSig
   if (response.status === 401 || response.status === 403) {
     let detail = "Authentication failed. Check your Personal Access Token.";
     try {
-      const body = await response.json();
+      const body = (await response.json()) as { error?: { message?: string } };
       if (body?.error?.message) {
         detail = body.error.message;
       }
@@ -74,7 +74,7 @@ export async function lightdashApiRequest<T>(endpoint: string, signal?: AbortSig
   if (!response.ok) {
     let detail = `API request failed with status ${response.status}`;
     try {
-      const body = await response.json();
+      const body = (await response.json()) as { error?: { message?: string } };
       if (body?.error?.message) {
         detail = body.error.message;
       }
