@@ -124,7 +124,7 @@ export async function searchLightdashItems(
     params.append("contentTypes[]", "dashboard");
     params.set("pageSize", pageSize.toString());
     params.set("page", page.toString());
-    params.set("sortBy", "lastUpdatedAt");
+    params.set("sortBy", "last_updated_at");
     params.set("sortDirection", "desc");
 
     if (query.trim()) {
