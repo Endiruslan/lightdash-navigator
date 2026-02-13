@@ -5,9 +5,7 @@ A Raycast extension to quickly search and open Lightdash dashboards, charts, and
 ## Features
 
 - **Fast Search** - Find dashboards and charts by name, space, or description
-- **Real-time Data** - Direct connection to your Lightdash instance via API
 - **Quick Access** - Open items in browser or copy links to clipboard
-- **View Details** - See update dates, spaces, and content types at a glance
 - **Secure Authentication** - Uses Personal Access Tokens
 
 ## Setup
