@@ -5,7 +5,9 @@
   "description": "Search and open Lightdash Dashboards, Charts, and Spaces quickly.",
   "icon": "extension-icon.png",
   "author": "endiruslan",
-  "categories": ["Web"],
+  "categories": [
+    "Web"
+  ],
   "license": "MIT",
   "commands": [
     {
@@ -45,7 +47,7 @@
     "@raycast/api": "^1.98.2"
   },
   "devDependencies": {
-    "@raycast/eslint-config": "^2.0.4",
+    "@raycast/eslint-config": "^2.1.1",
     "@types/node": ">=22.14.0",
     "@types/react": "^18.2.27",
     "prettier": "^3.5.3",
