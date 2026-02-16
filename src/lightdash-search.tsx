@@ -267,7 +267,7 @@ export default function LightdashSearchCommand() {
                 <Action
                   title="Open Extension Preferences"
                   icon={Icon.Gear}
-                  shortcut={{ modifiers: ["cmd"], key: "," }}
+
                   onAction={openExtensionPreferences}
                 />
                 <Action
