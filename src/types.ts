@@ -1,9 +1,3 @@
-export interface RaycastPreferences {
-  lightdashUrl: string;
-  personalAccessToken: string;
-  projectUuid: string;
-}
-
 export interface LightdashUser {
   uuid: string;
   firstName: string;

@@ -1,5 +1,5 @@
 import { getPreferenceValues } from "@raycast/api";
-import { RaycastPreferences, LightdashContentItem, LightdashContentResponse } from "./types";
+import { LightdashContentItem, LightdashContentResponse } from "./types";
 
 export const PREFERENCES_MISSING_ERROR = "PreferencesMissingError";
 export const AUTH_ERROR = "AuthError";
@@ -11,7 +11,7 @@ interface EffectivePreferences {
 }
 
 export function getEffectivePreferences(): EffectivePreferences {
-  const prefs = getPreferenceValues<RaycastPreferences>();
+  const prefs = getPreferenceValues<Preferences>();
 
   if (!prefs.lightdashUrl) {
     const error = new Error("Lightdash Instance URL is required. Please configure it in extension preferences.");
