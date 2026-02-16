@@ -264,12 +264,7 @@ export default function LightdashSearchCommand() {
                     }
                   }}
                 />
-                <Action
-                  title="Open Extension Preferences"
-                  icon={Icon.Gear}
-
-                  onAction={openExtensionPreferences}
-                />
+                <Action title="Open Extension Preferences" icon={Icon.Gear} onAction={openExtensionPreferences} />
                 <Action
                   title="Refresh"
                   icon={Icon.ArrowClockwise}
